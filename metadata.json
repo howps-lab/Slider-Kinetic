@@ -1,0 +1,6 @@
+{
+  "name": "KINETIC · Avant-Garde 3D Gallery",
+  "description": "An experimental digital art gallery and cinematic automotive photography exhibition featuring 3D perspective distortion, continuous drift, zoom transitions, and kinetic typography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
