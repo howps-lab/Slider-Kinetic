@@ -387,8 +387,8 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({
         </div>
 
         {/* Ambient Vignette Gradients at Left & Right Viewport Edges */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#fafafa] via-[#fafafa]/80 to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#fafafa] via-[#fafafa]/80 to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-[#070709] via-[#070709]/80 to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-28 bg-gradient-to-l from-[#070709] via-[#070709]/80 to-transparent z-10" />
       </div>
 
       {/* Discrete Gallery Navigation Bar */}

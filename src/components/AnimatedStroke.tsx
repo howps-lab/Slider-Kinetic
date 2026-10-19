@@ -13,7 +13,7 @@ export const AnimatedStroke: React.FC<AnimatedStrokeProps> = ({
   isActive,
   angle = 0,
   className = '',
-  color = 'rgba(26, 26, 26, 0.45)',
+  color = 'rgba(255, 255, 255, 0.35)',
 }) => {
   return (
     <div
@@ -37,18 +37,18 @@ export const AnimatedStroke: React.FC<AnimatedStrokeProps> = ({
           className="transition-all duration-1000 ease-out"
           style={{
             strokeDashoffset: isActive ? '0' : '80',
-            opacity: isActive ? 0.85 : 0.35,
+            opacity: isActive ? 0.9 : 0.3,
           }}
         />
         {/* Secondary subtle hairline stroke for editorial depth */}
         <path
           d={path}
-          stroke="rgba(225, 29, 72, 0.35)"
+          stroke="rgba(244, 63, 94, 0.6)"
           strokeWidth="0.75"
           strokeLinecap="round"
           style={{
             transform: 'translate(4px, 4px)',
-            opacity: isActive ? 0.7 : 0.15,
+            opacity: isActive ? 0.85 : 0.2,
             transition: 'opacity 0.8s ease',
           }}
         />

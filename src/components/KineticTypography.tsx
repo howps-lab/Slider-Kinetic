@@ -70,12 +70,12 @@ export const KineticTypography: React.FC<KineticTypographyProps> = ({
         <span
           className={`font-editorial-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-light tracking-tighter uppercase transition-all duration-700 block ${
             isActive
-              ? 'text-neutral-900/90 drop-shadow-sm'
-              : 'text-neutral-900/25'
+              ? 'text-white/95 drop-shadow-[0_10px_35px_rgba(0,0,0,0.95)]'
+              : 'text-white/20'
           }`}
           style={{
             letterSpacing: '-0.04em',
-            WebkitTextStroke: isActive ? '1px rgba(0,0,0,0.15)' : 'none',
+            WebkitTextStroke: isActive ? '1px rgba(255,255,255,0.3)' : 'none',
           }}
         >
           {kinetic.primaryWord}
@@ -93,8 +93,8 @@ export const KineticTypography: React.FC<KineticTypographyProps> = ({
         <span
           className={`font-editorial-serif text-3xl sm:text-4xl md:text-5xl italic tracking-wider transition-all duration-700 block ${
             isActive
-              ? 'text-rose-600/80 drop-shadow-sm'
-              : 'text-neutral-800/20'
+              ? 'text-rose-500 drop-shadow-[0_5px_20px_rgba(244,63,94,0.4)]'
+              : 'text-neutral-500/25'
           }`}
         >
           /{kinetic.secondaryWord.toLowerCase()}
@@ -104,10 +104,10 @@ export const KineticTypography: React.FC<KineticTypographyProps> = ({
       {/* Floating editorial phrase ribbon */}
       <div
         className={`absolute bottom-4 left-6 select-none whitespace-nowrap transition-all duration-500 hidden sm:block ${
-          isActive ? 'opacity-70 translate-y-0' : 'opacity-0 translate-y-2'
+          isActive ? 'opacity-90 translate-y-0' : 'opacity-0 translate-y-2'
         }`}
       >
-        <span className="font-editorial-display text-[11px] font-medium tracking-[0.25em] uppercase text-neutral-800 bg-white/70 backdrop-blur-xs px-2.5 py-1 rounded-sm border border-black/5">
+        <span className="font-editorial-display text-[11px] font-medium tracking-[0.25em] uppercase text-neutral-300 bg-neutral-900/90 backdrop-blur-xs px-2.5 py-1 rounded-sm border border-white/10 shadow-lg">
           {kinetic.phrase}
         </span>
       </div>

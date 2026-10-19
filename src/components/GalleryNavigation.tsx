@@ -26,17 +26,17 @@ export const GalleryNavigation: React.FC<GalleryNavigationProps> = ({
     <div className="flex flex-wrap items-center justify-between gap-4 w-full max-w-6xl mx-auto px-6 py-3 select-none">
       {/* Left: Numerical Index Counter with Tabular Figures */}
       <div className="flex items-center gap-3">
-        <span className="font-editorial-display font-medium text-lg tracking-tight text-neutral-900 tabular-nums">
+        <span className="font-editorial-display font-medium text-lg tracking-tight text-white tabular-nums">
           {String(currentIndex + 1).padStart(2, '0')}
         </span>
-        <span className="text-neutral-400 font-light">/</span>
-        <span className="font-editorial-display font-light text-sm text-neutral-500 tabular-nums">
+        <span className="text-neutral-600 font-light">/</span>
+        <span className="font-editorial-display font-light text-sm text-neutral-400 tabular-nums">
           {String(totalItems).padStart(2, '0')}
         </span>
-        <span className="text-neutral-300 mx-1">·</span>
+        <span className="text-neutral-700 mx-1">·</span>
         <button
           onClick={onFeaturedOpen}
-          className="text-xs font-mono tracking-wider uppercase text-neutral-600 hover:text-neutral-950 transition-colors cursor-pointer"
+          className="text-xs font-mono tracking-wider uppercase text-neutral-400 hover:text-white transition-colors cursor-pointer"
         >
           View Fullscreen [Space]
         </button>
@@ -50,8 +50,8 @@ export const GalleryNavigation: React.FC<GalleryNavigationProps> = ({
             onClick={() => onSelectIndex(idx)}
             className={`transition-all duration-300 cursor-pointer h-1 rounded-full ${
               idx === currentIndex
-                ? 'w-8 bg-neutral-900'
-                : 'w-2 bg-neutral-300 hover:bg-neutral-500'
+                ? 'w-8 bg-white'
+                : 'w-2 bg-neutral-700 hover:bg-neutral-500'
             }`}
             aria-label={`Go to slide ${idx + 1}`}
           />
@@ -63,27 +63,27 @@ export const GalleryNavigation: React.FC<GalleryNavigationProps> = ({
         {/* Autoplay Drift Toggle */}
         <button
           onClick={onToggleAutoPlay}
-          className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono tracking-wider text-neutral-700 hover:text-neutral-950 bg-neutral-100/80 hover:bg-neutral-200/80 rounded-sm border border-neutral-200/60 transition-colors cursor-pointer"
+          className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono tracking-wider text-neutral-300 hover:text-white bg-neutral-900/90 hover:bg-neutral-800 rounded-sm border border-white/10 transition-colors cursor-pointer"
           title={isAutoPlay ? 'Pause continuous drift' : 'Resume continuous drift'}
         >
           {isAutoPlay ? (
             <>
-              <Pause className="w-3 h-3 text-neutral-600" />
+              <Pause className="w-3 h-3 text-rose-400" />
               <span>DRIFTING</span>
             </>
           ) : (
             <>
-              <Play className="w-3 h-3 text-neutral-600" />
+              <Play className="w-3 h-3 text-neutral-400" />
               <span>PAUSED</span>
             </>
           )}
         </button>
 
         {/* Prev / Next Buttons */}
-        <div className="flex items-center border border-neutral-200 rounded-sm overflow-hidden bg-white shadow-2xs">
+        <div className="flex items-center border border-white/10 rounded-sm overflow-hidden bg-neutral-900/90 shadow-2xs">
           <button
             onClick={onPrev}
-            className="p-2 text-neutral-700 hover:text-neutral-950 hover:bg-neutral-50 transition-colors border-r border-neutral-200 cursor-pointer"
+            className="p-2 text-neutral-300 hover:text-white hover:bg-neutral-800 transition-colors border-r border-white/10 cursor-pointer"
             aria-label="Previous image"
             title="Previous (Left Arrow)"
           >
@@ -91,7 +91,7 @@ export const GalleryNavigation: React.FC<GalleryNavigationProps> = ({
           </button>
           <button
             onClick={onNext}
-            className="p-2 text-neutral-700 hover:text-neutral-950 hover:bg-neutral-50 transition-colors cursor-pointer"
+            className="p-2 text-neutral-300 hover:text-white hover:bg-neutral-800 transition-colors cursor-pointer"
             aria-label="Next image"
             title="Next (Right Arrow)"
           >

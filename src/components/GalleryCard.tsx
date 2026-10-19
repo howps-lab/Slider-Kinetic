@@ -81,10 +81,10 @@ export const GalleryCard: React.FC<GalleryCardProps> = ({
 
         {/* Photographed Artwork Frame */}
         <div
-          className={`relative w-full h-full overflow-hidden bg-neutral-900 rounded-sm transition-all duration-700 ${
+          className={`relative w-full h-full overflow-hidden bg-neutral-950 rounded-sm transition-all duration-700 ${
             isActive
-              ? 'shadow-2xl shadow-black/25 ring-1 ring-black/15'
-              : 'shadow-lg shadow-black/15 ring-1 ring-black/10 opacity-85 hover:opacity-100'
+              ? 'shadow-2xl shadow-black/95 ring-1 ring-white/25'
+              : 'shadow-xl shadow-black/70 ring-1 ring-white/10 opacity-75 hover:opacity-100'
           }`}
           style={{
             transform: 'translateZ(10px)',

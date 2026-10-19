@@ -31,21 +31,21 @@ export const IndexOverviewModal: React.FC<IndexOverviewModalProps> = ({
       />
 
       <div
-        className="relative z-10 w-full max-w-5xl max-h-[88vh] overflow-y-auto bg-white rounded-sm shadow-2xl p-6 sm:p-10 text-neutral-900 border border-neutral-200"
+        className="relative z-10 w-full max-w-5xl max-h-[88vh] overflow-y-auto bg-[#0d0d10] rounded-sm shadow-2xl p-6 sm:p-10 text-neutral-100 border border-white/10"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-center justify-between border-b border-neutral-100 pb-5 mb-8">
+        <div className="flex items-center justify-between border-b border-white/10 pb-5 mb-8">
           <div>
-            <span className="font-mono text-xs tracking-widest text-neutral-400 uppercase">
+            <span className="font-mono text-xs tracking-widest text-neutral-500 uppercase">
               Archival Index
             </span>
-            <h2 className="font-editorial-serif text-3xl sm:text-4xl text-neutral-950 mt-1">
+            <h2 className="font-editorial-serif text-3xl sm:text-4xl text-white mt-1">
               Plates in Exhibition
             </h2>
           </div>
           <button
             onClick={onClose}
-            className="p-2 text-neutral-400 hover:text-neutral-900 transition-colors cursor-pointer"
+            className="p-2 text-neutral-400 hover:text-white transition-colors cursor-pointer"
             aria-label="Close index"
           >
             <X className="w-5 h-5" />
@@ -61,7 +61,7 @@ export const IndexOverviewModal: React.FC<IndexOverviewModalProps> = ({
                 onSelectItem(item, index);
                 onClose();
               }}
-              className="group cursor-pointer border border-neutral-100 hover:border-neutral-900/30 rounded-sm p-3 transition-all duration-300 hover:shadow-lg bg-neutral-50/50 hover:bg-white"
+              className="group cursor-pointer border border-white/10 hover:border-white/30 rounded-sm p-3 transition-all duration-300 hover:shadow-2xl bg-neutral-950/70 hover:bg-neutral-900/80"
             >
               <div className="relative aspect-16/10 overflow-hidden bg-neutral-900 rounded-xs mb-3">
                 <img
@@ -70,25 +70,25 @@ export const IndexOverviewModal: React.FC<IndexOverviewModalProps> = ({
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute top-2 left-2 bg-black/60 backdrop-blur-xs text-white text-[10px] font-mono px-2 py-0.5 rounded-xs">
+                <div className="absolute top-2 left-2 bg-black/70 backdrop-blur-xs text-white text-[10px] font-mono px-2 py-0.5 rounded-xs border border-white/10">
                   PLATE {String(index + 1).padStart(2, '0')}
                 </div>
-                <div className="absolute bottom-2 right-2 font-editorial-serif text-rose-400 text-xs tracking-wider opacity-90">
+                <div className="absolute bottom-2 right-2 font-editorial-serif text-rose-400 text-xs tracking-wider opacity-90 drop-shadow">
                   {item.kinetic.primaryWord}
                 </div>
               </div>
 
               <div className="space-y-1">
                 <div className="flex items-center justify-between">
-                  <h3 className="font-editorial-serif text-lg text-neutral-950 group-hover:text-rose-600 transition-colors">
+                  <h3 className="font-editorial-serif text-lg text-white group-hover:text-rose-400 transition-colors">
                     {item.title}
                   </h3>
-                  <ArrowUpRight className="w-4 h-4 text-neutral-400 group-hover:text-neutral-900 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  <ArrowUpRight className="w-4 h-4 text-neutral-500 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </div>
-                <p className="font-editorial-display text-xs text-neutral-500 truncate">
+                <p className="font-editorial-display text-xs text-neutral-400 truncate">
                   {item.subtitle}
                 </p>
-                <div className="pt-2 text-[10px] font-mono text-neutral-400 flex items-center justify-between border-t border-neutral-100">
+                <div className="pt-2 text-[10px] font-mono text-neutral-500 flex items-center justify-between border-t border-white/10">
                   <span>{item.location}</span>
                   <span>{item.year}</span>
                 </div>

@@ -19,7 +19,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fafafa] text-neutral-900 flex flex-col justify-between selection:bg-neutral-900 selection:text-white">
+    <div className="min-h-screen bg-[#070709] text-neutral-100 flex flex-col justify-between selection:bg-rose-500 selection:text-white">
       {/* Top Bar Navigation */}
       <TopBar
         onOpenAbout={() => setIsAboutOpen(true)}
@@ -32,15 +32,15 @@ export default function App() {
         {/* Subtle Understated Editorial Header Header Text */}
         <div className="w-full max-w-6xl mx-auto px-6 md:px-12 mb-3 flex flex-col sm:flex-row sm:items-end justify-between gap-2 select-none">
           <div>
-            <div className="text-[11px] font-mono tracking-[0.25em] uppercase text-neutral-400">
+            <div className="text-[11px] font-mono tracking-[0.25em] uppercase text-neutral-500">
               Nocturne Transit · Automotive Study
             </div>
-            <h1 className="font-editorial-serif text-2xl sm:text-3xl text-neutral-900 font-normal tracking-tight mt-0.5">
+            <h1 className="font-editorial-serif text-2xl sm:text-3xl text-white font-normal tracking-tight mt-0.5">
               Kinetic Spatial Gallery
             </h1>
           </div>
           <div className="text-right sm:text-right">
-            <span className="font-editorial-display text-xs text-neutral-400 font-light tracking-wide">
+            <span className="font-editorial-display text-xs text-neutral-500 font-light tracking-wide">
               Perspective Distortion & Diagonal Typography
             </span>
           </div>
