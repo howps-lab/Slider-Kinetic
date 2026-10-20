@@ -41,7 +41,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     location: 'Gotthard Base, Switzerland',
     exif: 'Phase One IQ4 150MP · 35mm f/3.5 · 1/15s · ISO 400',
     curatorNotes: 'Explores the spatial tension between brutalist subterranean infrastructure and fluid aerodynamics. Light ribbons sweep along raw concrete surfaces.',
-    imageUrl: '../src/assets/images/tunnel_neon_streaks_1792377061537.jpg',
+    imageUrl: 'https://raw.githubusercontent.com/howps-lab/Slider-Kinetic/refs/heads/main/src/assets/images/tunnel_neon_streaks_1792377061537.jpg',
     aspectRatio: '4/3',
     width: 410,
     height: 308,
